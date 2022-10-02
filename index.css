@@ -1,28 +1,18 @@
-.textandpicture {
-    display: flex;
-    
-}
-.text {
-    background-color: rebeccapurple;
-    flex: 0.4;
-}
-
-.picture {
-    background-color: aqua;
-    flex: 0.6;
+.card-text {
+    color: rgb(77, 85, 85);
 }
 
 .copyright {
-    border: brown;
+    color: white;
     justify-content: center;
     text-align: center;
     text-shadow: 0em;
 }
 
 body {
-    background-color: rgb(235, 245, 245);
+    background-color: rgb(255, 255, 255);
 }
 
 footer {
-    background-color: rgb(189, 189, 189);
+    background-color: rgb(59, 73, 87);
 }
