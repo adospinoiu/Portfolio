@@ -1,5 +1,10 @@
 .card-text {
     color: rgb(77, 85, 85);
+    justify-content: center;
+}
+
+.card-body {
+    justify-content: center;
 }
 
 .copyright {
@@ -14,5 +19,5 @@ body {
 }
 
 footer {
-    background-color: rgb(59, 73, 87);
+    background-color: rgb(82, 79, 79);
 }
