@@ -19,9 +19,24 @@
 
 body {
     padding-top: 10px;
-    padding-left: 50px;
-    padding-right: 50px;
+    /* padding-left: 50px;
+    padding-right: 50px; */
     background-color: rgb(255, 255, 255);
+}
+
+@media screen and (width > 1000px), screen and (width > 700px) {
+    body {
+        padding-left:50px; 
+        padding-right: 50px;
+    }
+    
+}
+
+@media screen and (width < 1000px), screen and (width > 700px) {
+    body {
+        padding-left: 25px;
+        padding-right: 25px;
+    }
 }
 
 footer {
