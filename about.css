@@ -1,6 +1,15 @@
+.logolink {
+    padding-top: 5px;
+    padding-right: 10px;
+}
+
 .topnavbar {
     padding-left: 20px;
     padding-top: 10px;
+}
+
+.card-text {
+    color: rgb(77, 85, 85);
 }
 
 .copyright {
@@ -8,6 +17,13 @@
     justify-content: center;
     text-align: center;
     text-shadow: 0em;
+}
+
+body {
+    padding-top: 10px;
+    padding-left: 100px;
+    padding-right: 100px;
+    background-color: rgb(255, 255, 255);
 }
 
 footer {
