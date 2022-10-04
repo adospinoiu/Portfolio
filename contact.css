@@ -8,11 +8,38 @@
     padding-top: 10px;
 }
 
+.maincontactdiv {
+    border-color: brown;
+    padding-left: 6px;
+}
+.contactform {
+    max-width: max-content;
+    justify-self: center;
+}
 .copyright {
     color: rgb(77, 85, 85);
     justify-content: center;
     text-align: center;
     text-shadow: 0em;
+}
+
+body {
+    height: 100%;
+}
+
+@media screen and (width > 1000px), screen and (width > 700px) {
+    body {
+        padding-left:50px; 
+        padding-right: 50px;
+    }
+    
+}
+
+@media screen and (width < 1000px), screen and (width > 700px) {
+    body {
+        padding-left: 25px;
+        padding-right: 25px;
+    }
 }
 
 footer {
