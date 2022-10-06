@@ -8,6 +8,10 @@
     padding-top: 10px;
 }
 
+.container {
+    /* position: center; */
+    width: 50%
+}
 .maincontactdiv {
     border-color: brown;
     padding-left: 6px;
