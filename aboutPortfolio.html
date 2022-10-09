@@ -31,12 +31,12 @@
     <div class="container">
         <div class="col-4"></div>
         <div class="col">
-            <h2>Contact Me</h2>
+            <h2>My Portfolio</h2>
             <br>
 
             <div class="card" style="width: auto;">
                 <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
+                    <h5 class="card-title"><strong>Front End:</strong> HTML - CSS - Bootstrap</h5>
                     <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
                     <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
                         card's content.</p>
@@ -46,7 +46,7 @@
 
             <div class="card" style="width: auto;">
                 <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
+                    <h5 class="card-title"><strong>Back End:</strong> </h5>
                     <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
                     <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
                         card's content.</p>
@@ -54,16 +54,19 @@
             </div>
             <br>
 
-            <div class="mb-3">
-                <label for="exampleFormControlInput1" class="form-label">Email Address</label>
-                <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="email@address.com">
-            </div>
-            <div class="mb-3">
-                <label for="exampleFormControlTextarea1" class="form-label">Message</label>
-                <textarea class="form-control" id="exampleFormControlTextarea1"
-                    placeholder="Please send me an email if you are interested in connecting" rows="3"></textarea>
+            <div class="card" style="width: auto">
+                <div class="card-body">
+                    <h5 class="card-title"><strong>Database:</strong> Amazon S3 Bucket</h5>
+                    <p class="card-text">I decided to use Amazon S3 (one bucket) in order to store all the files for the portfolio. The files are simple and small: the .html files, the .css files, and the javascrip file for the contact page as well as the various images throughout the portfolio. </p>
+
+                    <p class="card-text">Creating the Amazon S3 bucket was straight-forward and simple. The more challenging aspect was figuring out the permission(s) and the policies that needed to be set-up and assigned in order for the bucket to function properly. First, I figured out the correct policy to assign just to the bucket. Initially, I granted too much access with the ACL settings and had to reimpose restrictions. I finally figured out the correct way to do it is to assign a specific JSON policy to the bucket itself. The public is allowed to "Get Objects" but no other permissions.  </p>
+
+                    <p class="card-text">Second, I figured out the proper setting to allow the bucket to host a static website. This was pretty straight forward, the steps are simple on AWS  </p>
+                </div>
             </div>
             <br>
+
+
 
 
         </div>
