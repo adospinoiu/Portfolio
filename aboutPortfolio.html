@@ -61,7 +61,7 @@
 
                     <p class="card-text">Creating the Amazon S3 bucket was straight-forward and simple. The more challenging aspect was figuring out the permission(s) and the policies that needed to be set-up and assigned in order for the bucket to function properly. First, I figured out the correct policy to assign just to the bucket. Initially, I granted too much access with the ACL settings and had to reimpose restrictions. I finally figured out the correct way to do it is to assign a specific JSON policy to the bucket itself. The public is allowed to "Get Objects" but no other permissions.  </p>
 
-                    <p class="card-text">Second, I figured out the proper setting to allow the bucket to host a static website. This was pretty straight forward, the steps are simple on AWS  </p>
+                    <p class="card-text">Second, I figured out the proper settings to allow the bucket to host a static website. This was pretty straight forward, the steps are simple on AWS ... just had to ensure the index.html page is the one that is first rendered.  </p>
                 </div>
             </div>
             <br>
