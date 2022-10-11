@@ -31,11 +31,24 @@
     <div class="container">
         <div class="col-4"></div>
         <div class="col">
-            <h2>My Portfolio</h2>
+            <h1><strong>My Portfolio</strong></h1>
             <br>
 
             <div class="card" style="width: auto;">
                 <div class="card-body">
+                    <div class="card-group .row-cols-1">
+                        <div class="card">
+                            <img src="/html.png" class="card-img-top" alt="...">
+                        </div>
+                        <div class="card">
+                            <img src="/css.png" class="card-img-top" alt="...">
+                        </div>
+                        <div class="card">
+                            <img src="/bootstrap.png" class="card-img-top" alt="...">
+                        </div>
+                    </div>
+
+                    <br>
                     <h5 class="card-title"><strong>Front End:</strong> HTML - CSS - Bootstrap</h5>
                     <p class="card-text">The portfolio is made up of multiple individual .html pages that are linked together and can be nagivated through with the use of the header and footer hyperlinks. I kept this project simple ... it could have been done as a React project, but I decided to go for simplicity to start with. There is very minimal Javascript ... everything is pretty static.</p>
                     
@@ -61,6 +74,8 @@
                     <p class="card-text">With respect to the "application-side" everything starts at GitHub. I have a repo on GitHub that I push updates to from my local environment. On AWS, I created a specific bucket on S3 ... in this specific bucket (not accessible to the public) I used AWS CodePipeline to create a web-hook that connects the bucket to my GitHub account. The web-hook looks for any changes in my GitHub account (in this case the specific repo associated with my portfolio).</p>
 
                     <p class="card-text">When the web-hook detects a change in my GitHub repo, it takes the changes and deploys them to the specific bucket (see the next section) that I am using to host my static portfolio webpage. This way, anytime that I make changes on my local environment and push them to my GitHub they are automatically deployed to my S3 bucket hosting my portfolio ... so changes are continously and quickly deployed to my live portfolio.</p>
+
+                    <p class="card-text">The last aspect is my specific web domain (alexdospinoiu.com). I purchased it on GoDaddy and set it up so that anyone searches for it or clicks on it ... it forwards the traffic to the endpoint of the S3 bucket that I'm using to host my portfolio. This is one thing I'm going to try to see if I can figure out ... how to have the alexdospinoiu.com "show up" as the address on the address-bar when the traffic has arrived at my S3 bucket. Still working on this detail...</p>
 
                 </div>
             </div>
