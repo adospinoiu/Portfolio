@@ -56,6 +56,12 @@
 
                     <p class="card-text">The API-Endpoint acts as a trigger to a Lambda Function (which is also on AWS). The Lambda Function takes the information passed to it through the API-Endpoint (i.e. the POST from the visitor on my Contact page) ... it takes this information and sends it to my email using Amazon's Simple Email Service. In order to use Amazon's SES I had to verify an email ... that email is used by the Lambda function as both the Sender & Receiver. Using this method and Amazon tools, I am able to receive emails (to my email address) from the Contact page on my portfolio.</p>
 
+                    <br>
+                    <h6 class="card-subtitle mb-2 text-muted">Application-Side Related Backend </h6>
+                    <p class="card-text">With respect to the "application-side" everything starts at GitHub. I have a repo on GitHub that I push updates to from my local environment. On AWS, I created a specific bucket on S3 ... in this specific bucket (not accessible to the public) I used AWS CodePipeline to create a web-hook that connects the bucket to my GitHub account. The web-hook looks for any changes in my GitHub account (in this case the specific repo associated with my portfolio).</p>
+
+                    <p class="card-text">When the web-hook detects a change in my GitHub repo, it takes the changes and deploys them to the specific bucket (see the next section) that I am using to host my static portfolio webpage. This way, anytime that I make changes on my local environment and push them to my GitHub they are automatically deployed to my S3 bucket hosting my portfolio ... so changes are continously and quickly deployed to my live portfolio.</p>
+
                 </div>
             </div>
             <br>
