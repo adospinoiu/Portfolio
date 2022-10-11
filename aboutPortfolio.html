@@ -48,9 +48,14 @@
 
             <div class="card" style="width: auto;">
                 <div class="card-body">
-                    <h5 class="card-title"><strong>Back End:</strong> Javascript - Node - AWS: CodePipeline, Lambda, API Gateway</h5>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                        card's content.</p>
+                    <h5 class="card-title"><strong>Back End:</strong> Javascript - Node - AWS: CodePipeline, Lambda, API Gateway, SES</h5>
+                    <p class="card-text">To explain the back-end of this portfolio, it is easiest to explain it as "client-side related backend" and the "application-side related backend".</p>
+                    <br>
+                    <h6 class="card-subtitle mb-2 text-muted">Client-Side Related Backend </h6>
+                    <p class="card-text">When a visitor interacts with the Contact page and enters their Name, Email Address and Message ... there is a Javascript eventListener that listens for the Submit button to be clicked on. The information is then put in a JSON object and a POST request is triggered to a specific API-Endpoint. I created this API-Endpoint on AWS using API-Gateway.</p>
+
+                    <p class="card-text">The API-Endpoint acts as a trigger to a Lambda Function (which is also on AWS). The Lambda Function takes the information passed to it through the API-Endpoint (i.e. the POST from the visitor on my Contact page) ... it takes this information and sends it to my email using Amazon's Simple Email Service. In order to use Amazon's SES I had to verify an email ... that email is used by the Lambda function as both the Sender & Receiver. Using this method and Amazon tools, I am able to receive emails (to my email address) from the Contact page on my portfolio.</p>
+
                 </div>
             </div>
             <br>
