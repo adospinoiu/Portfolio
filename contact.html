@@ -31,23 +31,51 @@
     <div class="container">
         <!-- <div class="col-4"></div> -->
         <div class="col">
-            <h2>Contact Me</h2>
+            <h2><strong>Contact Me</strong></h2>
             <br>
             <form>
-            <div class="mb-3">
-                <label for="exampleFormControlInput1" class="form-label">Name</label>
-                <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="First & Last Name">
-            </div>
-            <div class="mb-3">
-                <label for="exampleFormControlInput1" class="form-label">Email Address</label>
-                <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="email@address.com">
-            </div>
-            <div class="mb-3">
-                <label for="exampleFormControlTextarea1" class="form-label">Message</label>
-                <textarea class="form-control" id="exampleFormControlTextarea1" placeholder="Please send me an email if you are interested in connecting" rows="3"></textarea>
-            </div>
-            <br>
-            <button type="button" class="btn btn-primary">Primary</button>
+                <div class="mb-3">
+                    <label 
+                        for="name" 
+                        class="form-label">Name</label>
+                    <input 
+                        name="name"
+                        type="text" 
+                        class="form-control" 
+                        id="exampleFormControlInput1"
+                        placeholder="First & Last Name">
+                </div>
+
+                <div class="mb-3">
+                    <label 
+                        for="email" 
+                        class="form-label">Email Address</label>
+                    <input 
+                        name="email"
+                        type="email" 
+                        class="form-control" 
+                        id="exampleFormControlInput1"
+                        placeholder="email@address.com">
+                </div>
+
+                <div class="mb-3">
+                    <label 
+                        for="name" 
+                        class="form-label">Message</label>
+                    <textarea 
+                        name="message"
+                        class="form-control" 
+                        id="exampleFormControlTextarea1"
+                        placeholder="Please send me an email if you are interested in connecting" 
+                        rows="3"></textarea>
+                </div>
+
+                <br>
+                <!-- <button type="button" class="btn btn-primary">SEND</button> -->
+                <input type="submit" />
+                <div>
+                    <p id="result-text"></p>
+                </div>
             </form>
         </div>
         <!-- <div class="col-4"></div> -->
@@ -55,19 +83,20 @@
 
     <div class="maincontactdiv">
         <div class="contactform">
-            <h2>Contact Me</h2>
+
             <form>
-                <label for="name">Name:</label>
-                <input name="name" type="text" /><br /><br />
-                <label for="email">Email:</label>
-                <input name="email" type="email" /><br /><br />
-                <label for="name">Message:</label>
-                <textarea name="message"></textarea><br /><br />
-                <input type="submit" />
+                <!-- <label for="name">Name:</label>
+                <input name="name" type="text" /><br /><br /> -->
+                <!-- <label for="email">Email:</label>
+                <input name="email" type="email" /><br /><br /> -->
+                <!-- <label for="name">Message:</label>
+                <textarea name="message"></textarea><br /><br /> -->
+                <!-- <input type="submit" />
                 <div>
                     <p id="result-text"></p>
-                </div>
+                </div> -->
             </form>
+
         </div>
     </div>
 
