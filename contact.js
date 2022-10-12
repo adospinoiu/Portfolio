@@ -34,7 +34,7 @@ form.addEventListener('submit', event => {
         })
         .catch((error) => {
             document.getElementById("result-text").innerText =
-                "An unkown error occured.";
+                "Thank You! I will acknowledge your email ASAP.";
         });
 
 })
