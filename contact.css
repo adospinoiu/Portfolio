@@ -39,7 +39,7 @@ body {
     }
     .container {
         /* position: center; */
-        width: 40%
+        max-width: 55%;
     }
     
 }
@@ -51,7 +51,7 @@ body {
     }
     .container {
         /* position: center; */
-        width: 75%
+        width: 55%
     }
 }
 
