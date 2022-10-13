@@ -18,3 +18,25 @@
 footer {
     background-color: rgb(172, 212, 108);
 }
+
+@media screen and (width > 1000px), screen and (width > 700px) {
+    body {
+        padding-left:50px; 
+        padding-right: 50px;
+    }
+    
+}
+
+@media screen and (width < 1000px), screen and (width > 700px) {
+    body {
+        padding-left: 25px;
+        padding-right: 25px;
+    }
+}
+
+@media screen and (width < 700px) {
+    body {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+}

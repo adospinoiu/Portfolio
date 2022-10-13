@@ -10,8 +10,9 @@
 
 .container {
     /* position: center; */
-    width: 50%
+    /* width: 50% */
 }
+
 .maincontactdiv {
     border-color: brown;
     padding-left: 6px;
@@ -36,6 +37,10 @@ body {
         padding-left:50px; 
         padding-right: 50px;
     }
+    .container {
+        /* position: center; */
+        width: 40%
+    }
     
 }
 
@@ -43,6 +48,21 @@ body {
     body {
         padding-left: 25px;
         padding-right: 25px;
+    }
+    .container {
+        /* position: center; */
+        width: 75%
+    }
+}
+
+@media screen and (width < 700px) {
+    body {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    .container {
+        /* position: center; */
+        width: 75%
     }
 }
 
