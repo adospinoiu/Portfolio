@@ -33,44 +33,33 @@
             <h2><strong>Contact Me</strong></h2>
             <br>
             <form>
-                <div class="mb-3">
-                    <label 
-                        for="name" 
-                        class="form-label">Name</label>
+                <div class="mb-3 form__box">
                     <input 
-                        name="name"
-                        type="text" 
-                        class="form-control" 
-                        id="exampleFormControlInput1"
+                        name="name" type="text" class="form-control" id="exampleFormControlInput1"
                         placeholder="First & Last Name">
+                    <label for="name" class="form-label">Name</label>
+                    <div class="form__shadow"></div>
                 </div>
 
-                <div class="mb-3">
-                    <label 
-                        for="email" 
-                        class="form-label">Email Address</label>
-                    <input 
-                        name="email"
-                        type="email" 
-                        class="form-control" 
-                        id="exampleFormControlInput1"
+                <div class="mb-3 form__box">
+                    <input name="email" type="email" class="form-control" id="exampleFormControlInput1"
                         placeholder="email@address.com">
+                    <label for="email" class="form-label">Email Address</label>
+                    <div class="form__shadow"></div>
                 </div>
 
-                <div class="mb-3">
-                    <label 
-                        for="name" 
-                        class="form-label">Message</label>
-                    <textarea 
-                        name="message"
-                        class="form-control" 
-                        id="exampleFormControlTextarea1"
-                        placeholder="Please send me an email if you are interested in connecting" 
-                        rows="3"></textarea>
+                <div class="mb-3 form__box">
+                    <textarea name="message" class="form-control" id="exampleFormControlTextarea1"
+                        placeholder="Please send me an email if you are interested in connecting" rows="3"></textarea>
+                    <label for="name" class="form-label">Message</label>
+                    <div class="form__shadow"></div>    
                 </div>
 
                 <br>
-                <input type="submit" value="Send"/>
+                <div class="form__button">
+                    <input type="submit" class="form-submit" value="Send" />
+                </div>
+
                 <div>
                     <p id="result-text"></p>
                 </div>
